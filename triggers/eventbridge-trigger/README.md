@@ -1,6 +1,6 @@
-# foobar-trigger-template
+# aws-eventbridge-trigger-eventbridge
 
-This is the template webhook trigger for the foobar integration.
+This is a basic webhook to accept eventbridge events as a webhook. Eventbridge does not currently implement a webhook target so events will need to be passed from a lambda function.
 
 ## Data Emitted
 
