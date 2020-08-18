@@ -4,20 +4,20 @@
 
 from relay_sdk import Interface, WebhookServer
 from quart import Quart, request, jsonify, make_response
+import json
 
 relay = Interface()
 app = Quart('my-app')
 
 @app.route('/', methods=['POST'])
 async def handler():
-
     payload = await request.get_json()
     if payload is None:
         return {'message': 'not a valid webhook'}, 400, {}
 
     relay.events.emit({
-          'webhook_contents': payload
-      })
+        'webhook_contents': json.dumps(payload)
+    })
 
     return {'message': 'success'}, 200, {}
 
