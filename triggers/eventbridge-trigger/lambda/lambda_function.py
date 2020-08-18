@@ -1,7 +1,8 @@
 import json
 import requests
+import os
 
-webhook_url = 'https://<relay-webhook-here>.webhook-proxy.stage.relay-infra.net'
+webhook_url = os.environ['RELAY_WEBHOOK_URL']
 
 def lambda_handler(event, context):
     print(event)
