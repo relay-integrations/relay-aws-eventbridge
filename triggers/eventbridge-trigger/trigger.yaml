@@ -23,7 +23,7 @@ publish:
 examples:
 - summary: When an event is created
   content:
-    apiVersion: 1
+    apiVersion: v1
     kind: Trigger
     name: generic-webhook
     source:
