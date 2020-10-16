@@ -19,3 +19,16 @@ build:
 
 publish:
   repository: relaysh/aws-eventbridge-trigger-eventbridge
+
+examples:
+- summary: When an event is created
+  content:
+    apiVersion: 1
+    kind: Trigger
+    name: generic-webhook
+    source:
+      type: webhook
+      image: relaysh/aws-eventbridge-trigger-eventbridge
+    binding:
+      parameters:
+        data: !Data webhook_contents
