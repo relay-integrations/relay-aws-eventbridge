@@ -9,7 +9,7 @@ homepage: https://github.com/relay-integrations/relay-aws-eventbridge
 source: https://github.com/relay-integrations/relay-aws-eventbridge
 
 description: |
-  This is a template for creating a Relay Integration repository.
+  Amazon EventBridge is a serverless event bus that ingests data from your own apps, SaaS apps and AWS services and routes that data to targets.
 
 owner:
   name: Puppet, Inc.
