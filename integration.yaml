@@ -17,5 +17,4 @@ owner:
   url: https://puppet.com
 
 tags:
-- template
-- relay integration
+- aws
