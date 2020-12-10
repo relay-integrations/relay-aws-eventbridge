@@ -2,7 +2,7 @@ apiVersion: integration/v1
 kind: Trigger
 name: aws-eventbridge-trigger-eventbridge
 version: 1
-summary: This is an EventBridge trigger for detecting events in AWS
+summary: EventBridge event fired
 description: |
   This is a generic trigger to receive any given payload from EventBridge.
 
