@@ -1,6 +1,6 @@
 apiVersion: integration/v1
 kind: Trigger
-name: aws-eventbridge-trigger-eventbridge
+name: eventbridge-trigger
 version: 1
 summary: EventBridge event fired
 description: |
