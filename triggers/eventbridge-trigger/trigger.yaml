@@ -26,7 +26,7 @@ examples:
   content:
     apiVersion: v1
     kind: Trigger
-    name: generic-webhook
+    name: aws-eventbridge-event
     source:
       type: webhook
       image: relaysh/aws-eventbridge-trigger-eventbridge
